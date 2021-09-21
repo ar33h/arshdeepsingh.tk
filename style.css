@@ -1,0 +1,171 @@
+/* global */
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #101214;
+    color: #7A7C80;
+}
+
+h2,.white{
+    color: #fff;
+}
+
+a{
+    color: #7A7C80;
+    text-decoration: none;
+}
+
+figure{
+    padding-top: 5.5vh;
+    text-align: center;
+}
+
+header h1{
+    text-align: center;
+    font-weight: normal;
+    font-size: 3.1rem;
+    margin-bottom: 0px;
+    padding-top: 0.5vh;
+    color: #FFFFFF;
+}
+
+main a{
+    font-size: 2rem;
+    padding: 14px;
+
+}
+
+main{
+    padding-top: 2vh;
+    text-align: center;
+}
+
+.emoji2{
+    position: absolute;
+    opacity: 0;
+    transition: 0.2s;
+}
+
+.emoji2:hover{
+    opacity: 1;
+}
+
+
+header h2{
+    font-size: 1.4rem;
+    margin-bottom: 17px;
+}
+
+section p{
+    font-size: 1.1rem;
+    padding-bottom: 10px;
+    margin:0;
+    align-content: center;
+    padding-left: 400px;
+    padding-right: 400px;
+    padding-top: 18px;
+    padding-bottom: 38px;
+    line-height: 40px;
+    color: #F9F1F1;
+}
+
+main a:hover{
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.white:hover{
+    position: relative;
+    padding-left: 10px;
+}
+
+footer{
+    text-align: center;
+    font-size: 1rem;
+    margin-top: 230px;
+    color: #7A7C80;;
+}
+
+footer h4{
+    font-weight: normal;
+}
+
+#dt {
+    font-weight: bolder;
+}
+
+#dt:hover{
+    color: #fff;
+    font-weight:600;
+}
+
+
+/* media queries */
+/* Smartphones */
+@media (max-width: 480px) {
+  
+    .emoji1, .emoji2{
+        height: 110px;
+        width: 110px;
+    }
+    
+    header h1{
+        font-size: 2.2rem;
+        padding-top: 0.1vh;
+    }
+
+    header h2{
+        font-size: 1rem;
+       
+    }
+
+    section p{
+        font-size: 0.8rem;
+        padding-left: 31px;
+        padding-right: 31px;
+        line-height: 25px;
+        padding-top: 5px;
+    }
+
+    footer{
+        margin-top: 40px;
+        font-size: 0.7rem;
+    }
+    
+  }
+
+/* Tablets */
+@media (max-width: 768px) {
+  
+    .emoji1, .emoji2{
+        height: 150px;
+        width: 150px;
+        margin-top: 80px;
+    }
+    
+    header h1{
+        font-size: 2.6rem;
+    }
+
+    header h2{
+        font-size: 1.2rem;
+    }
+
+    section p{
+        font-size: 1rem;
+        padding-left: 130px;
+        padding-right: 130px;
+        line-height: 30px;
+    }
+
+    footer{
+        margin-top: 140px;
+    }
+    
+  }
+
+

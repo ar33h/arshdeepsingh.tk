@@ -1,0 +1,73 @@
+<!-- Personal Profile Website - Arshdeep Singh -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Font and icon CSS toolkit -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="code.png">
+    <title> Arshdeep, who? </title>
+</head>
+<body itemscope itemtype="http://schema.org/Person"> 
+
+    <!-- The figure tag specifies self-contained content, like illustrations or diagrams -->
+    <figure> 
+        <img itemprop="image" class="emoji2" src="emoji2.png" height="150" width="150">
+        <img itemprop="image"class="emoji1" src="emoji1.png" height="150" width="150">
+    </figure>
+
+    <!-- The header element represents a container for introductory content -->
+    <header> 
+        <meta itemprop="honorificPrefix" content="Mr"/>
+        <h1 itemprop="name"> Arshdeep Singh </h1>
+        <meta itemprop="alternateName" content="Arsh"/>
+    </header>  
+
+    <!-- The main tag specifies the main content of the website -->
+    <main>
+        <header>
+            <h2 itemprop="knowsAbout"> FLUTTER - FIGMA - FIREWALLS </h2>
+        </header>
+
+        <!-- The section element defines a section of the website -->
+        <section itemprop="description">
+            <p> Hi! My name is <meta itemprop="gender" content="Male"/> <meta itemprop="nationality" content="India"/>Arshdeep Singh. I am a Third Year Computer Science & Engineering Undergrad at <meta itemprop="affiliation" content="Symbiosis Institute of Technology"/>Symbiosis Institute of Technology, Pune. I am adept at designing Prototypes and developing Mobile Applications. Apart from being a <meta itemprop="jobTitle" content="Flutter Developer"/>Flutter Developer, I am a Cybersecurtiy enthusiast with a passion for Vulnerability Management and Threat Intelligence. </p>
+        </section>
+        
+
+        <!-- The nav element defines a set of navigation links -->
+        <nav>
+            <a itemprop="sameAs" href="https://www.linkedin.com/in/ar33h"><i class="fab fa-linkedin"></i></a>
+            <a itemprop="url" href="https://www.github.com/ar33h"><i class="fab fa-github"></i></a>
+            <a itemprop="url" href="https://www.dribbble.com/ar33h"><i class="fab fa-dribbble"></i></a>
+            <a itemprop="email" href="mailto:arshdeepsingh.singh7@gmail.com"><i class="fas fa-envelope"></i></a>
+        </nav>
+
+    </main>
+
+    <!-- The footer element defines a footer for the website -->
+    <footer>
+        <!-- Time element defines current date/time -->
+        <h4> - It’s currently <time id="dt"> </time> in <a itemprop="address" href="https://en.wikipedia.org/wiki/Kanpur">Arshdeep’s city -</a> </h4>
+        
+        <script>
+            const today = new Date();
+            let h = today.getHours();
+            let m = today.getMinutes();
+            m = checkTime(m);
+            document.getElementById('dt').innerHTML = h + ":" + m;
+
+            function checkTime(i) {
+                if (i < 10) {i = "0" + i};  //To add zero before numbers < 10
+                return i;
+            }
+        </script>
+
+    </footer>
+
+</body>
+</html>
