@@ -55,16 +55,17 @@
         <h4> - It’s currently <time id="dt"> </time> in <a itemprop="address" href="https://en.wikipedia.org/wiki/Kanpur">Arshdeep’s city -</a> </h4>
         
         <script>
-            const today = new Date();
-            let h = today.getHours();
-            let m = today.getMinutes();
-            m = checkTime(m);
-            document.getElementById('dt').innerHTML = h + ":" + m;
-
-            function checkTime(i) {
-                if (i < 10) {i = "0" + i};  //To add zero before numbers < 10
-                return i;
+            
+            function calcTime(city, offset) 
+            {
+                d = new Date();
+                utc = d.getTime() + (d.getTimezoneOffset() * 60000);
+                nd = new Date(utc + (3600000*offset));
+    
+                return nd.toLocaleString();
             }
+            document.getElementById('dt').innerHTML = calcTime('Bombay', '+5.5');
+
         </script>
 
     </footer>
